@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NBU Urban Organics</title>
+        <meta name="description" content="This is the description">
+		
+		<link rel="stylesheet" href="products.html">
+		<link rel="stylesheet" href="cart2.html">
+		<link rel="stylesheet" href="cart2.css">
+		<link rel="stylesheet" href="cart.js">
+		<link rel="stylesheet" href="checkout.html">
+        <script src="cart.js" async></script>
+		
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">NBU Urban Organics</h1>
+        </header>
+		
+	
+	
+<!-- Cart Items Section -->
+        <section class="container content-section">
+            <h2 class="section-header">Cart Items</h2>
+            
+						
+                <div class="shop-item">
+                    <span class="shop-item-title">Immunity Tea</span>
+                    <img class="shop-item-image" src="images/immunityherbalteas.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$15.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Jamaican Fruit Body Mist</span>
+                    <img class="shop-item-image" src="images/jamaicanfruitsplash.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$15.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Facial Scrub</span>
+                    <img class="shop-item-image" src="images/facialscrub2.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">MERCH</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">T-Shirt</span>
+                    <img class="shop-item-image" src="images/tshirt1.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Coffee Cup</span>
+                    <img class="shop-item-image" src="images/coffee3.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+<!-- start CART section  1-24-22 -->
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+			
+<!-- start "continue shopping" -->
+<a href="/collections/all" title="Continue shopping">Continue shopping</a>
+<!-- end "continue shopping" -->
+
+<!-- start checkout button -->
+<button "checkout" </button><a href="checkout.html">Checkout</button>	
+</section>
+<!-- end CART section -->
+
+        			
+<!-- add PayPal button and links to PayPal-->
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+<!-- Identify your business so that you can collect the payments. -->
+  <input type="hidden" name="nbuurbanorganics" value="nbuurbanorganics.com">
+
+  <!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+  <input type="hidden" name="cmd" value="_cart">
+  <input type="hidden" name="add" value="1">
+
+  <!-- Specify details about the item that buyers will purchase. -->
+  <input type="hidden" name="item_name" value="Birthday - Cake and Candle">
+  <input type="hidden" name="amount" value="3.95">
+  <input type="hidden" name="currency_code" value="USD">
+
+  <!-- Display the payment button. -->
+  <input type="image" name="submit"
+    src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+    alt="Add to Cart">
+  <img alt="" width="1" height="1"
+    src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+</form>
+
+<!-- end of PayPal button -->
+
+
+<script>
+  if(Storage !== undefined) {
+
+    var defaultLink = "/collections/all";
+
+    {% if template contains 'collection' %}
+      sessionStorage.collection = "{{ collection.url }}";
+    {% endif %}
+
+    {% if template contains 'cart' %}
+      if( !sessionStorage.collection ) {
+        sessionStorage.collection = defaultLink;
+      }
+      document.getElementById("continue-shopping").href = sessionStorage.collection;
+    {% endif %}
+
+    }
+</script>			
+
+<!-- start footer -->
+<footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">NBU Urban Organics</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+</footer>
+<!-- end footer -->
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NBU Signature Hair & Body Butter</title>
+
+<meta charset="utf-8">
+<meta name="keywords" content="natural skin care products, haircare products for natural hair, relaxed hair, curly hair, healthy and damaged hair, therapeutic essential oils"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css" >
+<style>
+
+<!-- (A) CSS + JS -->
+    <link rel="stylesheet" href="cart.css">
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+  </head>
+  <body>
+    <div id="cart-wrap">
+      <!-- (B) PRODUCTS LIST -->
+      <div id="cart-products"></div>
+
+      <!-- (C) CURRENT CART -->
+      <div id="cart-items"></div>
+    </div>
+
+.navBar{margin:0 auto; width:1080px;}
+.navbar ul {padding:0px;}                /*this will align all links vertically*/
+.navbar ul li {float:left; margin:1px; position:relative; background-color:transparent; border-radius:5px; list-style-type:none;}
+.navbar ul li a {text-decoration:none; color:white; padding:5px; font-weight:bolder; display:block;height:100px; display:block;width:100px; text-align:center;}
+.navbar ul li ul{position:absolute; visibility:hidden;}
+.navbar ul li:hover ul{visibility:visible;}
+.navbar ul li a:hover{color:brown;}                   /*changes the text links to brown*/
+.navbar ul li:hover{background-color:tan;}            /*changes the background of links to tan*/
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: #4166f5;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+h3{
+	color: #fe4eda;
+	text-align: center;
+	font-style: bold;
+}
+
+
+</style>
+
+<!-- Add to Cart button style -->
+<style>
+.btn {
+  background-color: #c19a6b;
+  border: none;
+  color: white;
+  padding: 7px 8px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.btn:hover {opacity: 0.6}
+</style>
+<!-- end of Add to Cart button style -->
+
+</head>
+
+<!-- card item with add to cart -->
+<div class="row">
+	<div class="card">
+	      <img src="images/elegance.jpg" alt="Moisturizing Body Butter" style="width:298px;height:200px" onclick="myFunction(this);">
+		<h3><center>Elegance</center></h3>
+		<p class="price">$20.99</p>
+	<!-- a href link that place item on cart2.html -->
+	<center><a href="cart2.html"></p>
+		
+
+
+<!-- start add PayPal Add to Cart button  10-30-21 -->
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="A2S36PSSHUMW8">
+<table>
+<tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td><select name="os0">
+	<option value="8 oz.">8 oz. $20.00 USD</option>
+	<option value="16 oz.">16 oz. $25.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+<!-- end add PayPal Add to Cart button -->
+
+
+<!-- start add View Cart Button  10-30-21 -->
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="business" value="YLNTJ67875J3J">
+<input type="hidden" name="display" value="1">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+<!-- end add View Cart Button  10-30-21 -->		
+	<button class="btn">Add to Cart </button></center>
+	<button "checkout" </button><a href="checkout.html">Checkout</button>	
+	</div>
+</div>
+<div>
+
+<!-- start add Buy Now button   10-30-21-->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="wddreaming@gmail.com">
+<input type="hidden" name="lc" value="US">
+<input type="hidden" name="item_name" value="Body Butter">
+<input type="hidden" name="item_number" value="prod_ID1">
+<input type="hidden" name="button_subtype" value="services">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="tax_rate" value="9.679">
+<input type="hidden" name="shipping" value="10.00">
+<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+<table>
+<tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td><select name="os0">
+	<option value="8 oz.">8 oz. $20.00 USD</option>
+	<option value="16 oz.">16 oz. $25.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="option_select0" value="8 oz.">
+<input type="hidden" name="option_amount0" value="20.00">
+<input type="hidden" name="option_select1" value="16 oz.">
+<input type="hidden" name="option_amount1" value="25.00">
+<input type="hidden" name="option_select2" value="32 oz.">
+<input type="hidden" name="option_amount2" value="40.00">
+<input type="hidden" name="option_index" value="0">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+<!-- end add Buy Now button -->
+<p>Ingredients: Shea Butter, Frankincense, Lavender and other essential oils, along with Mango, Argan Oil, Coconut Oil, and Vitamin E. Hair Benefits: Hair moisturizer; rich in vitamins/minerals that promote hair health and growth; great conditioner; Vitamin A to help fight dandruff; improves scalp circulation and hair growth; provides nutrients for collagen production and rejuvenation; therapeutic properties, UV of SPF-6; helps heal wounds; reduce wrinkles, crows feet and character lines; improve skin elasticity; removes scarring by inducing collagen production; superior to cocoa butter.  Body Benefits: Great cleanser; antioxidant; Vitamin C for healthy skin; reduce dark spots, blemishes, and acne; Vitamin A and Beta carotene for restoring, rejuvenating, and reviving the skin; Remove blackheads; delays the onset of anti-ageing and pigmentation; improves complexion; rich in essential fatty acids; aids in digestion, better cellular and heart health; prevents hair from falling and slows down the process of graying.</p>
+
+<p><b>Hair Benefits</b>: Make your hair more resilient against breakage; Provides nourishment to hair follicles to stimulate hair growth; wellness properties that protect the hair from the wind, cold, sun (powerful UV of SPF-6);Give you thicker hair; Treats hair and scalp conditions; combats dandruff and dryness.</p>
+
+<p><b>Body & Skin Benefits</b>: Skin moisturizer; stimulates cellular activity in the body; promotes healthy looking skin; rich in essential fatty acids; provides nutrients for rejuvenation; wellness properties that protect the skin from the wind, cold, sun (powerful UV of SPF-6); helps heal wounds; reduce wrinkles, crows feet and character lines; improve skin elasticity; improves scarring by inducing collagen production; superior to cocoa butter and other herbal ingredients.</p>
+
+<p><b>Application</b>: Completely saturate your hair with warm, not hot, water. Squirt a small amount of shampoo into the palm of your hand. Apply it to your scalp and massage until it lathers. Work the shampoo through your hair, but pay the most attention to the scalp.
+Rinse your hair and scalp completely.</p>
+</div> 
+
+
+
+ 
+ </body>
+ </html>

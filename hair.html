@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <title>Naturally Beautifully Made</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="cart2.html">
+	<link rel="stylesheet" href="imagine.html">
+	
+	<link rel="stylesheet" href="cart2.css">
+	<link rel="stylesheet" href="cart.js">
+	<link rel="stylesheet" href="checkout.html">
+     <script src="cart.js" async></script>
+	
+	
+<!-- start W3schools gallery grid --> 	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+<script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!--Navbar start here-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+	<div class="container">
+          <img src="images/NBMlogos/NBMlogo3.png" alt="NBM Logo" style="width:80px;">
+        <div class="container">
+          
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a href="index.html"class="nav-link">Home</a>
+              </li>
+			  <li class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-shopping-cart fa-2x"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!--End of NAv-->
+
+
+<!-- start CSS style for gallery -->
+<!-- start div gallery box width dimensions to 50%  -->
+<style>
+
+.gallery {
+  margin: 1em 0;
+  text-align: center;
+}
+
+
+.gallery img {
+  width: 30vw;
+  height: 30vw;
+}
+
+.gallery-cover img {
+  object-fit: cover;
+}
+
+.gallery-contain img {
+  object-fit: contain;
+}
+
+
+div.gallery {
+  border: 5px solid #zzz;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(white);
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 50%;
+  height: 50%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+<!-- end cart style updated 1-24-22 -->
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.main-header {
+    width: 100%;
+    height: 50vh;
+	background-color: rgba(0, 0, 0, .6);
+	background-image: url("images/herbs.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+
+.band-name-large {
+    font-size: 8em;
+}
+
+
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header {
+    font-family: "Arial";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.about-band-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer {
+    background-color: #56CCF2;
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    width: 11%;
+    font-weight: bold;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+<!-- end cart style updated 1-24-22 -->
+</style>
+<!-- end CSS style gallery -->
+
+
+<div class="w3-container w3-purple">
+<center><h1 style="color:white;">Hair Organics</h1></center>
+</div>
+
+
+<!-- start Hair Products -->
+<body style="background-color:black;">
+
+
+<!-- start 1st row Woman Hair & Body Butters gallery -->
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hair/imagine1.jpeg">
+      <img src="images/hair/imagine1.jpeg" style="width:50%">
+    </a>
+	
+<div class="desc"><p style="color:black;">Imagine
+	 <a href="quickviewimagine.html" class="btn details px-auto"  style="color:black;">Quick View</a><br/></p>
+	 
+	 
+	 <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+	 
+	 
+	 </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hair/gardenia.jpg">
+      <img src="images/hair/elegance2.jpg" style="width:50%">
+    </a>
+    <div class="desc"><p style="color:black;" >Elegance
+	<a href="quickviewimagine.html" class="btn details px-auto"  style="color:black;">Quick View</a><br/></p>
+	
+	<button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+	 </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hair/kenyabodybutter2.jpg">
+      <img src="images/hair/kenyabodybutter2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><p style="color:black;">Kenya
+	<a href="quickviewimagine.html" class="btn details px-auto"  style="color:black;">Quick View</a><br/></p>
+	
+	<button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+	 </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hair/pharoah.jpg">
+      <img src="images/hair/pharoah.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc"><p style="color:black;">Pharaoh 
+	<a href="quickviewimagine.html" class="btn details px-auto"  style="color:black;">Quick View</a><br/></p>
+	
+	<button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+	 </div>
+  </div>
+</div>
+
+<!-- start 2nd row -->
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hair/thailemongrass3.jpeg">
+      <img src="images/hair/thailemongrass3.jpeg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><p style="color:black;">Thai Lemongrass
+	<a href="quickviewimagine.html" class="btn details px-auto"  style="color:black;">Quick View</a><br/></p>
+	 </div>
+  </div>
+</div>
+<!-- end 2nd row -->
+
+
+<!-- start 3rd row -->
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hair/unscented.jpg">
+      <img src="images/hair/unscented.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><p style="color:black;">Unscented
+	<a href="quickviewimagine.html" class="btn details px-auto"  style="color:black;">Quick View</a><br/></p>
+	 </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hair/nbmbutter.jpg">
+      <img src="images/hair/nbmbutter.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><p style="color:black;">NBM Signature 
+	<a href="quickviewimagine.html" class="btn details px-auto"  style="color:black;">Quick View</a><br/></p>
+	 </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hair/manofhonor.jpg">
+      <img src="images/hair/manofhonor.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><p style="color:black;">Man of Honor-M
+	<a href="quickviewimagine.html" class="btn details px-auto"  style="color:black;">Quick View</a><br/></p>
+	 </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hair/nbmbutter.jpg">
+      <img src="images/hair/nbmbutter.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><p style="color:black;">Lucious  
+	<a href="quickviewimagine.html" class="btn details px-auto"  style="color:black;">Quick View</a><br/></p>
+	 </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hair/gardenia.jpg">
+      <img src="images/hair/gardenia.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><p style="color:black;">Gardenia  
+	<a href="quickviewimagine.html" class="btn details px-auto"  style="color:black;">Quick View</a><br/></p>
+	 </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hair/mahogany.jpeg">
+      <img src="images/hair/mahogany.jpeg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><p style="color:black;">Mahogany-H  
+	<a href="quickviewimagine.html" class="btn details px-auto"  style="color:black;">Quick View</a><br/></p>
+	 </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hair/kenyahairconditioner.jpeg">
+      <img src="images/hair/kenyahairconditioner.jpeg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc"><p style="color:black;">Kenya-H  
+	<a href="quickviewimagine.html" class="btn details px-auto"  style="color:black;">Quick View</a><br/></p>
+	 </div>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+<div style="padding:6px;">
+<!-- end 3rd row gallery -->
+
+
+
+<div class="w3-container w3-purple">
+<center><h1 style="color:white;">Herbal Shampoo and Conditioner</h1></center>
+</div>
+
+<!-- start 4th row -->
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hair/shampoocoll.jpeg">
+      <img src="images/hair/shampoocoll.jpeg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc"><p style="color:black;"> Shampoo Set
+	<a href="quickviewimagine.html" class="btn details px-auto"  style="color:black;">Quick View</a><br/></p>
+	 </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hair/shampooconditioner.jpeg">
+      <img src="images/hair/shampooconditioner.jpeg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc"><p style="color:black;">Hair Conditional
+	<a href="quickviewimagine.html" class="btn details px-auto"  style="color:black;">Quick View</a><br/></p>
+	 </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hair/hairoilhairmist.jpeg">
+      <img src="images/hair/hairoilhairmist.jpeg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><p style="color:black;">Hair Oil /Tea Mist
+	<a href="quickviewimagine.html" class="btn details px-auto"  style="color:black;">Quick View</a><br/></p>
+	 </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/hair/elegance2.jpg">
+      <img src="images/hair/elegance2.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><p style="color:black;">Elegance
+	<a href="quickviewimagine.html" class="btn details px-auto"  style="color:black;">Quick View</a><br/></p>
+	 </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+<div style="padding:6px;">
+<!-- end 3rd row gallery -->
+<!-- end 4th row gallery -->
+
+
+
+
+<!-- start CART section  updated 1-24-22-->
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+<!-- end CART section  updated 1-24-22-->		
+			
+			
+<!-- start "continue shopping"  updated 1-24-22 -->
+<a href="/collections/all" title="Continue shopping">Continue shopping</a>
+<!-- end "continue shopping" -->
+
+<!-- start checkout button -->
+<button "checkout" </button><a href="checkout.html">Checkout</button>	
+</section>
+<!-- end CART section -->
+
+        			
+<!-- add PayPal button and links to PayPal-->
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+<!-- Identify your business so that you can collect the payments. -->
+  <input type="hidden" name="nbuurbanorganics" value="nbuurbanorganics.com">
+
+<!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+  <input type="hidden" name="cmd" value="_cart">
+  <input type="hidden" name="add" value="1">
+
+  <!-- Specify details about the item that buyers will purchase. -->
+  <input type="hidden" name="item_name" value="Birthday - Cake and Candle">
+  <input type="hidden" name="amount" value="3.95">
+  <input type="hidden" name="currency_code" value="USD">
+
+  <!-- Display the payment button. -->
+  <input type="image" name="submit"
+    src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+    alt="Add to Cart">
+  <img alt="" width="1" height="1"
+    src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+</form>
+
+<!-- end of PayPal button -->
+<!-- end "continue shopping"  updated 1-24-22 -->
+
+
+<script>
+  if(Storage !== undefined) {
+
+    var defaultLink = "/collections/all";
+
+    {% if template contains 'collection' %}
+      sessionStorage.collection = "{{ collection.url }}";
+    {% endif %}
+
+    {% if template contains 'cart' %}
+      if( !sessionStorage.collection ) {
+        sessionStorage.collection = defaultLink;
+      }
+      document.getElementById("continue-shopping").href = sessionStorage.collection;
+    {% endif %}
+
+    }
+</script>			
+
+
+
+
+</body>
+</html>
